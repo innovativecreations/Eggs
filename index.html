@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pet Egg</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .egg-container {
+            position: relative;
+            width: 200px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        .egg {
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 35%, #fff, #ccc);
+            border-radius: 50% 50% 45% 45%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .stats {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Pet Egg</h1>
+    <div class="egg-container">
+        <div id="petEgg" class="egg"></div>
+    </div>
+    <div class="stats">
+        <p>Health: <span id="health">100</span></p>
+        <p>Happiness: <span id="happiness">100</span></p>
+    </div>
+    <div>
+        <button onclick="interact('feed')">Feed</button>
+        <button onclick="interact('play')">Play</button>
+        <button onclick="interact('clean')">Clean</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
